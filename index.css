@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;  
+    list-style: none;
+}
+body{
+    background-color: rgb(239, 254, 253);
+}
+html{
+    font-size: 18px;
+}
+.logo h1{
+    color: rgb(255, 191, 0);
+    font-size: 1.2rem;
+    font-family: 'Macondo', cursive;
+}
+.navigation{
+    margin: .6rem 0;
+}
+.sitewidth{
+    max-width: 1300px;
+    padding: 0 .5rem;
+    margin: auto;
+    min-height: 100vh;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    line-height: 3rem;
+}
+.menubar{
+    cursor: pointer;
+}
+.links{
+    text-align: center;
+    line-height: 2.2rem;
+    height: 0px;
+    overflow: hidden;
+    transition:all 1s;
+}
+.navitems{
+    border-top: 1px solid rgb(186, 186, 186);
+    letter-spacing: .05rem;
+}
+.navitems a{
+    color: black;
+}
+.btn{
+    cursor: pointer;
+    letter-spacing: .1rem;
+    padding: .3rem;
+    background-color: rgb(41, 41, 220);
+    border-radius: .2rem;
+    color: white;
+    border-width: 0;
+}
+.btn:hover{
+    background-color: rgb(11, 11, 180);
+}
+.show{
+    height: 11.4rem;
+    transition: all 1s;
+}
+.simplyrecipe{
+    min-height: 12rem;
+    background-image: url('https://images.pexels.com/photos/2950003/pexels-photo-2950003.jpeg?auto=compress&cs=tinysrgb');
+    content: " ";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .8;
+    filter: brightness(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    color: rgb(255, 255, 255);;
+    letter-spacing: 5px;
+    margin-top: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+}
+.recipelinks a{
+    line-height: 1.5rem;
+}
+.simplyrecipe p{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.footer{
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    padding: .6rem;
+    font-size: .9rem;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+.footer p span{
+    color: rgb(147, 147, 241);
+}
+@media only screen and (min-width:1110px){
+    .item img{
+        max-width: 350px;
+    }
+}
+@media only screen and (min-width:800px){
+    html{
+        font-size: 20px;
+    }
+    .logo h1{
+        font-size: 1.5rem;
+    }
+    .menubar{
+        display: none;
+    }
+    .navbar{
+        margin: 1.7rem 0;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .navitems{
+        border-width: 0;
+    }
+    .links{
+        height: auto;
+        /* background-color: rebeccapurple; */ 
+        width: 100vw;
+        margin-top: 5px;
+    }
+    .contact{
+        margin-left: auto;
+    }
+    .link{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .btn{
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .simplyrecipe{
+        font-size: 1.8rem;
+    }
+    .simplyrecipe p{
+        font-size: .9rem;
+    }
+}
+@media only screen and (max-width:380px){
+    .simplyrecipe{
+        font-size: 1.4rem;
+    }
+    .simplyrecipe p{
+        font-size: .7rem;
+    }
+}
+@media only screen and (max-width:300px){
+    .simplyrecipe{
+        font-size: 1.3rem;
+        letter-spacing: normal;
+    }
+    .simplyrecipe p{
+        font-size: .6rem;
+    }
+}
+
+
+@media only screen and (max-width:475px){
+    .item{
+        text-align: center;
+    }
+    .item img{
+        max-width: 80%;
+    }
+}
+@media only screen and (max-width:330px){
+    .footer{
+        font-size: .6rem;
+        letter-spacing: .1rem;
+    }
+    html{
+        font-size: 14px;
+    }
+}
+
+.info{
+    margin-top: 4rem;
+    padding: 0 .8rem;
+    gap: 1rem;
+    display: flex;
+    line-height: 1.4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.information h1{
+    margin: 1.2rem 0;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: .1rem;
+    color: rgb(57, 56, 56);
+}
+.information p{
+    margin: 1.3rem 0;
+    color: rgb(92, 92, 92);
+}
+.information{
+    width: 50%;
+}
+.infoimg{
+    width: 40%;
+    overflow: hidden;
+}
+.infoimg img{
+    width: 100%;
+}
+@media only screen and (max-width:656px){
+    .item img{
+        max-width: 250px;
+    }
+    .infoimg{
+        display: none;
+    }
+    .information{
+        width: 100%;
+    }
+    html{
+        font-size: 16px;
+    }
+}
+.contactform{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.contactform form div{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    line-height: 1.4rem;
+}
+.contactform form div input{
+    height: 1.5rem;
+    padding-left: .5rem;
+}
+.contactform form div textarea{
+    padding-left: .5rem;
+}
+.sitewidth{
+    margin-bottom: 5rem;
+}
+.tags{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.tag{
+    background-color: blueviolet;
+    padding: .5rem .8rem;
+    border-radius: .2rem;
+}
+.tag a{
+    color: white;
+    font-family: sans-serif;
+    line-height: 1.4rem;
+    font-size: .9rem;
+    font-weight: 100;
+}
+@media only screen and (min-width:800px){
+    .contactform{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:850px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .recipies{
+        width: auto;
+    }
+    .tags{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width:560px){
+    .item img{
+        max-width: 210px;
+    }
+    .tag{
+        padding: .4rem .6rem;
+    }
+}
+@media only screen and (max-width:475px){
+    .item{
+        text-align: center;
+    }
+    .item img{
+        max-width: 80%;
+    }
+    .tags{
+        grid-template-columns: 1fr;
+        font-size: .8rem;
+    }
+    .tag a{
+        line-height: 1.2rem;
+    }
+}
+
+
+
+
+/* new--------------------- */
+.products-section{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 5rem auto;
+    display: flex;
+    gap: 1rem;
+}
+.company input{
+    display: block;
+    outline: none;
+    border: none;
+    background-color: rgb(254, 245, 232);
+    border: 1px solid rgb(95, 95, 95);
+    padding: 8px;
+    border-radius: 5px;
+}
+.company input:focus{
+    box-shadow: 0 0 5px rgb(251, 231, 211) inset;
+}
+.company .filter-company{
+    margin-top: .6rem;
+}
+.filter-company h1{
+    line-height: 2.5rem;
+}
+.filter-company .list .list-items{
+    line-height: 1.6rem;
+    cursor: pointer;
+    color: rgb(77, 77, 77);
+}
+
+.products-section .products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+.products .product{
+    width: 31%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(52, 52, 52);
+}
+.product img{
+    width: 100%;
+    height: 210px;
+    border-radius: 2px;
+}
+
+.product p{
+    font-size: .8rem;
+}
+
+
+.not-found{
+    margin: auto;
+}
+
+
+@media only screen and (max-width:900px){
+    html{
+        font-size: 16px;
+    }
+    .product img{
+        height: 160px;
+    }
+}
+@media only screen and (max-width:800px){
+    .company input{
+        width: 150px;
+    }
+}
+@media only screen and (max-width:700px){
+    .products{
+        justify-content: space-between;
+    }
+    .products .product{
+        width: 45%;
+    }
+}
+@media only screen and (max-width:600px){
+    .products-section{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:450px){
+    .products .product{
+        width: 100%;
+    }
+    .product img{
+        height: 220px;
+    }
+}
+@media only screen and (max-width:350px){
+    .product img{
+        height: 180px;
+    }
+}
